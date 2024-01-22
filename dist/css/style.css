@@ -1,0 +1,114 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ------------------------------ ROOT & BODY ELEMENT ------------------------------ */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  background: #000;
+}
+
+/* -------------------------------- VARIABLES ------------------------------- */
+/* ------------------------------ GLOBAL STYLE ------------------------------ */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------------------ STYLING START ----------------------------- */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  height: 6.4rem;
+}
+nav #logo h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+nav #nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+nav #nav-links ul li a {
+  color: white;
+  font-weight: 700;
+  filter: drop-shadow(0 0 10px);
+}
+
+/* HEADER */
+header {
+  width: 85%;
+  margin: 0 auto;
+  height: calc(100vh - 6.4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+}
+header #heading-and-paragraph {
+  width: 50%;
+}
+header #heading-and-paragraph h2 #one {
+  font-size: 6rem;
+  filter: drop-shadow(0 0 10px black);
+}
+header #heading-and-paragraph h2 #two {
+  font-size: 4rem;
+  filter: drop-shadow(0 0 10px black);
+}
+header #heading-and-paragraph p {
+  font-size: 2rem;
+  text-align: justify;
+  padding-top: 2rem;
+  filter: drop-shadow(0 0 5px black);
+}
+header #heading-and-paragraph button {
+  padding: 1rem 5rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+header #heading-and-paragraph button:hover {
+  filter: invert(100%);
+}
+header #social {
+  display: flex;
+  gap: 1.5rem;
+}
+header #social a {
+  color: #fff;
+}
+header #social i {
+  font-size: 2.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
